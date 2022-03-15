@@ -6,6 +6,7 @@ const PhotoGridItem = ({ id, src, alt, tags }) => {
     <article>
       <Anchor href={`/photos/${id}`}>
         <Image
+          alt={alt}
           src={src}
           srcSet={`
             ${src.replace('.jpg', '.avif')} 1x,
